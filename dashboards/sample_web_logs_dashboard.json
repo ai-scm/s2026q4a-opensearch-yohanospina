@@ -1,0 +1,37 @@
+{
+  "version": "2.13.0",
+  "objects": [
+    {
+      "id": "logs-por-host",
+      "type": "visualization",
+      "attributes": {
+        "title": "Logs por Host",
+        "visState": "{\"title\":\"Logs por Host\",\"type\":\"histogram\",\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\"},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"host.keyword\",\"size\":5}}]}"
+      }
+    },
+    {
+      "id": "trafico-temporal-logs",
+      "type": "visualization",
+      "attributes": {
+        "title": "Tráfico Temporal de Logs",
+        "visState": "{\"title\":\"Tráfico Temporal de Logs\",\"type\":\"line\",\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\"},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"timestamp\"}}]}"
+      }
+    },
+    {
+      "id": "total-de-logs",
+      "type": "visualization",
+      "attributes": {
+        "title": "Total de Logs",
+        "visState": "{\"title\":\"Total de Logs\",\"type\":\"metric\",\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\"}]}"
+      }
+    },
+    {
+      "id": "dashboard-analisis-logs-web",
+      "type": "dashboard",
+      "attributes": {
+        "title": "Dashboard de Análisis de Logs Web",
+        "panelsJSON": "[{\"gridData\":{\"x\":0,\"y\":0,\"w\":24,\"h\":15,\"i\":\"1\"},\"version\":\"2.13.0\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"id\":\"logs-por-host\"},{\"gridData\":{\"x\":24,\"y\":0,\"w\":24,\"h\":15,\"i\":\"2\"},\"version\":\"2.13.0\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"id\":\"trafico-temporal-logs\"},{\"gridData\":{\"x\":0,\"y\":15,\"w\":48,\"h\":10,\"i\":\"3\"},\"version\":\"2.13.0\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"id\":\"total-de-logs\"}]"
+      }
+    }
+  ]
+}
