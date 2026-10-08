@@ -1,4 +1,4 @@
-# Proyecto OpenSearch: Despliegue Local, Búsqueda Facetada e Interacción REST API
+# Proyecto OpenSearch
 
 Este repositorio contiene la solución completa para la implementación técnica de OpenSearch y OpenSearch Dashboards mediante entornos contenedorizados con Docker Compose, ingesta de datasets de prueba, inserción manual de registros y exploración avanzada mediante la API REST y Dev Tools.
 
